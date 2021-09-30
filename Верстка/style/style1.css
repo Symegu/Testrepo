@@ -228,6 +228,51 @@ body {
   color: #F16D7F;
 }
 
+.filter-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 51px;
+  padding-bottom: 64px;
+}
+
+.filter-left {
+  width: 360px;
+  padding-left: 16px;
+}
+
+.filter-right {
+  width: 360px;
+  margin-left: 30px;
+}
+
+.filter-button {
+  background-color: transparent;
+  border: transparent;
+  padding-right: 28px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.filter-button-svg {
+  padding-left: 12px;
+}
+
 .feature-wrap {
   display: -webkit-box;
   display: -ms-flexbox;

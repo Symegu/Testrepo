@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -167,11 +168,51 @@ font-size: 24px;
 line-height: 29px;
 color: #F16D7F;
 }
+.filter {
+}
+.filter-wrap {
+    display: flex;
+    align-items: center;
+    padding-top: 51px;
+    padding-bottom: 64px;
+}
+.filter-left {
+    width: 360px;
+    padding-left: 16px;
+}
+.filter-right {
+    width: 360px;
+    margin-left: 30px;
+}
+
+.filter-button {
+    background-color: transparent;
+    border: transparent;
+    padding-right: 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    align-items: center;
+}
+
+.sort {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.filter-button-svg {
+    padding-left: 12px;
+}
+
 .feature-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .feature-heading {
 font-weight: normal;
 font-size: 30px;
