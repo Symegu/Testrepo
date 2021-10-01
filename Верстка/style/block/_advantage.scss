@@ -1,0 +1,29 @@
+.advantages {
+    background: $main-black;
+    margin-top: 95px;
+    &-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &-card {
+        display: flex;
+        flex-direction: column;
+        width: $card-width;
+        height: 135px;
+        margin-top: 110px;
+        margin-bottom: 100px;
+        align-items: center;
+        &-heading {
+            @include main-text (normal,20px,24px);
+            color: #FBFBFB;
+            margin-top: 28px;
+        }
+        &-description {
+            @include main-text (300,14px,17px);
+            color: #FBFBFB;
+            margin-top: 16px;
+            text-align: center;
+        }
+    }
+}

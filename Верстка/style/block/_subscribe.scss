@@ -1,0 +1,85 @@
+.subscribe {
+    background-image: url(../img/photo-subscribe.png);
+    background-repeat: no-repeat;
+    height: 448px;
+    padding-top: 97px;
+    background-size: cover;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: $card-width;
+        height: 225px;
+        align-items: center;
+    }
+    &-right {
+        flex-wrap: wrap;
+        display: flex;
+        max-width: 557px;
+        max-height: 142px;
+        align-items: center;
+        justify-content: center;
+    }
+    &-form {
+        width: 356px;
+        display: flex;
+        margin-top: 30px;
+    }
+}
+
+.subscribe-text{
+    @include main-text (bold,24px,167.2%);
+    text-align: center;
+    color: $main-black;
+    &--small {
+        @include main-text (normal,18px,167.2%);
+        text-align: center;
+        color: $main-black;
+    }
+}
+
+.subscribe-field {
+	padding: 20px;
+    width: 255px;
+	background-color: lightgrey;
+	border: none;
+	border-top-left-radius: 26px;
+	border-bottom-left-radius: 26px;
+    color: $main-black;
+    &::placeholder {
+        @include main-text;
+        color: $main-black;
+        opacity: 0.67;
+    }
+    &:hover {
+        background: #e9e9e9;
+    }
+}
+
+.subscribe-btn {
+	padding: 20px;
+	background-color: $main-pink;
+	border: none;
+	border-top-right-radius: 26px;
+	border-bottom-right-radius: 26px;
+    @include main-text;
+    color: $default-white;
+    &:hover {
+        background-color: #e05c6e;
+    }
+}
+
+.subscribe-feedback {
+    @include main-text (normal,20px,24px);
+    text-align: center;
+    color: $main-black;
+    margin-top: 30px;
+    &-italic {
+        font-style: italic;
+    }
+}

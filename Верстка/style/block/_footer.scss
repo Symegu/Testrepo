@@ -1,0 +1,34 @@
+.footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: $main-black;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.socialmedia {
+    margin-left: 7px;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    background-color: $default-white;
+    border: transparent;
+    &:hover {
+        background-color: $main-pink;
+    }
+    &:hover .socialicon {
+        color: $default-white;
+    }
+}
+.socialicon {
+    @include href;
+    color: $main-black;
+}
+
+.allrights {
+    @include main-text (normal,16px,19px);
+    color: $default-white;
+}

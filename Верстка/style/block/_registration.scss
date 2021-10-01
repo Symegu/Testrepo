@@ -1,0 +1,85 @@
+.registration {
+    &-wrap {
+        display: flex;
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+    &-left {
+        display: flex;
+        flex-wrap: wrap;
+        width: $card-width;
+        flex-direction: column;
+        margin-right: 128px;
+    }
+    &-right {
+        flex-wrap: wrap;
+    }
+}
+
+.registration-form {
+    
+    &-type {
+        @include main-text (300,16px,19px);
+        color: $main-black;
+        padding-bottom: 20px;
+    }
+    &-field {
+        border: 1px solid #A4A4A4;
+        padding: 13px 17px 16px 17px;
+        width: $card-width;
+        margin-bottom: 20px;
+        &::placeholder {
+            @include main-text (300,13px,16px);
+            color: #B1B1B1;
+        }
+    }
+    &-radio {
+        margin-top: 11px;
+        margin-bottom: 33px;
+        display: flex;
+        &-input {
+            margin-right: 10px;
+        }
+        &-label {
+            @include main-text (300,11px,13px);
+            color: #000000;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &-info {
+        @include main-text (300,13px,16px);
+        color: #B1B1B1;
+        padding-bottom: 40px;
+    }
+    &-button {
+        @include main-text;
+        color: $default-white;
+        @include btn;
+        background-color: $main-pink;
+        padding: 17px 24px ;
+        &-pic {
+            padding-left: 20px;
+        }
+    }
+}
+
+.registration-info {
+    color: #000000;
+    @include main-text (300,24px,29px);
+    padding-bottom: 22px;
+    &-list {
+        list-style-type: none;
+        padding-bottom: 15px;
+            &::before {
+            content: url(../img/checkmark.svg);
+            margin-right: 22px;
+        }
+    }
+}
+
+.label {
+    padding-right: 20px;
+}

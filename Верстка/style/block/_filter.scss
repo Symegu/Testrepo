@@ -1,0 +1,33 @@
+.filter {
+    &-wrap {
+        display: flex;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 66px;
+    }
+    &-left {
+        width: $card-width;
+        padding-left: 16px;
+    }
+    &-right {
+        width: $card-width;
+        margin-left: 30px;
+        display: flex;
+    }
+}
+
+.filter-button {
+    @include btn;
+    padding-right: 28px;
+    color: #000000;
+    @include main-text (600, 14px, 17px);
+    &-svg {
+        padding-left: 12px;
+    }
+    &-sort{
+        @include btn;
+        @include main-text;
+        color: #6F6E6E;
+        margin-top:0;
+    }
+}

@@ -1,0 +1,147 @@
+.cart {
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 128px;
+        padding-top: 96px;
+    }
+    &-right {
+        width: $card-width;
+    }
+    &-left {
+        display: flex;
+        flex-direction: column;
+    }
+    &-btn {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-button {
+        @include btn;
+        @include main-text (300,14px,17px);
+        color: $main-black;
+        padding: 17px 40px;
+        border: 1px solid #A4A4A4;
+        margin-top: 32px;
+    }
+}
+
+.cart-form {
+    width: $card-width;
+    margin-bottom: 58px;
+    &-text {
+        @include main-text (300,16px,19px);
+        color: $main-black;
+        padding-bottom: 20px;
+    }
+    &-field {
+        border: 1px solid #A4A4A4;
+        padding: 13px 17px 16px 17px;
+        width: $card-width;
+        margin-bottom: 20px;
+        &::placeholder {
+            @include main-text (300,13px,16px);
+            color: #B1B1B1;
+        }
+    }
+    &-button {
+        @include btn;
+        padding: 12px 25px;
+        @include main-text (300,11px,13px);
+        border: 1px solid #A4A4A4;
+        color: #4A4A4A;
+    }
+}
+
+.cart-total {
+    display: flex;
+    flex-direction: column;
+    width: $card-width;
+    background-color: #F8F3F4;
+    align-items: center;
+    &-text {
+        align-self: flex-end;
+        text-align: right;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        margin-right: 37px;
+    }
+    &-sub {
+        @include main-text (normal,11px,13px);
+        color: #4A4A4A;
+        margin-bottom: 12px;
+        &-price {
+            margin-left: 25px;
+        }
+    }
+    &-grand {
+        @include main-text (300,16px,19px);
+        color: $main-black;
+        &-price {
+            font-weight: bold;
+            color: $main-pink;
+            margin-left: 25px;
+        }
+    }
+    &-line {
+        color: #E2E2E2;
+        width: 275px;
+    }
+    &-button {
+        @include btn;
+        @include main-text (300,16px,19px);
+        color: $default-white;
+        background-color: $main-pink;
+        padding: 15px 42px;
+        margin-top: 17px;
+        margin-bottom: 42px;
+    }
+}
+
+.cart-item {
+    width: 652px;
+    height: 306px;
+    box-shadow: 17px 19px 24px 0px #00000021;
+    margin-bottom: 40px;
+    display: flex;
+    &-pic {
+        width: 262px;
+        height: 306px;
+        display: flex;
+    }
+    &-description {
+        width: 390px;
+        height: 306px;
+        padding: 22px 22px 67px 31px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-top {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-bottom {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &-text {
+        @include main-text (normal,24px,29px);
+        color: $main-black;
+        width: 210px;
+        flex-wrap: wrap;
+        &-small {
+            @include main-text (normal,22px,26px);
+            color: #575757;
+            padding-bottom: 6px;
+        }
+    }
+}
+.active-price {
+    color: #EF5B70;
+}
+.quanity {
+    border: 1px solid #EAEAEA;
+    padding: 1px 16px 2px 16px;
+    margin-left: 24px;
+}

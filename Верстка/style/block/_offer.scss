@@ -1,0 +1,26 @@
+.offer {
+    background-color: #F1E4E6;
+    &-wrap {
+        height: 756px;
+        background-image: url(../img/mainpageman.png);
+        background-repeat: no-repeat;
+        background-position: -225px bottom;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.offer-title{
+    @include main-text (900,48px,40px);
+    color: $main-black;
+    border-left: 12px solid $main-pink;
+    padding-left: 16px;
+    margin-right: 90px;
+    &--small {
+        @include main-text (bold,32px,38px);
+    }
+    &--red {
+        color: $main-pink;
+    }
+}
