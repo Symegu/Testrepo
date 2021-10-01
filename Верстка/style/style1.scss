@@ -9,7 +9,7 @@ body {
 }
 
 .wrapper {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -227,30 +227,30 @@ color: #FBFBFB;
 margin-top: 16px;
 }
 .subscribe {
+    background-color: #eee;
     background-image: url(../img/photo-subscribe.png);
     background-repeat: no-repeat;
-    height: 448px;
-    padding-top: 97px;
+    background-position: left bottom;
+    min-height: 448px;
     background-size: cover;
+    display: flex;
 }
 .subscribe-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
+    width: 100%;
 }
 .sub-left {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 360px;
     height: 225px;
     align-items: center;
-    
 }
 .sub-right {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 557px;
     height: 142px;
     align-items: center;
@@ -269,6 +269,45 @@ color: #222224;
     text-align: center;
     color: #222224;
 }
+.subscribe-form {
+ width: 356px;
+ display: flex;
+ margin-top: 30px;
+}
+.subscribe-field {
+	padding: 20px;
+    width: 255px;
+	background-color: lightgrey;
+	border: none;
+	border-top-left-radius: 26px;
+	border-bottom-left-radius: 26px;
+    color: #222224;
+}
+.subscribe-field::placeholder {
+    font-size: 14px;
+line-height: 17px;
+color: #222224;
+opacity: 0.67;
+}
+.subscribe-field:hover {
+    background: #e9e9e9;
+}
+
+.subscribe-btn {
+	padding: 20px;
+	background-color: #F16D7F;
+	border: none;
+	border-top-right-radius: 26px;
+	border-bottom-right-radius: 26px;
+    font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+}
+
+.subscribe-btn:hover {
+    background-color: #F1918D;
+}
+
 .sub-feedback {
     font-weight: normal;
 font-size: 20px;
@@ -300,5 +339,76 @@ margin-top: 30px;
 font-size: 16px;
 line-height: 19px;
 color: #FBFBFB;
+}
+@media (max-width: 1024px) {
+    .wrapper {
+        max-width: 736px;
+    }
+    .header-left {
+        margin-left: 16px;
+    }
+    .header-right {
+        margin-right: 16px;
+    }
+    
+    .offer-wrap {
+        height: 368px;
+        background-size: contain;
+        background-position: 0;
+    }
+    .offer-title {
+        margin-right: 16px;
+        font-size: 44px;
+        line-height: 53px;
+    }
+    .offer-title--small {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .offer-title--red {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .categories {
+        padding-top: 20px;
+    }
+    .categories-item {
+        max-width: 232.44px;
+        max-height: 167.62px;
+    }
+    .categories-item-4 {
+        max-width: 736px;
+        margin-top: 20px;
+    }
+    .feature-heading {
+        margin-bottom: 3px;
+    }
+    .feature-description {
+        margin-bottom: 72px;
+    }
+    .feature-button {
+        margin-top: 0;
+    }
+    .advantages {
+        margin-top: 64px;
+    }
+    .advantages-wrap {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 16px;
+    }
+    .adv-card {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    .subscribe-wrap {
+        flex-direction: column;
+        margin-top: 64px;
+        margin-bottom: 160px;
+    }
+    .sub-text {
+        margin-top: 20px;
+    }
+
 
 }
