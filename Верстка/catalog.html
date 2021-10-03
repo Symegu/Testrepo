@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mainpage</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="style/style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
                 <button class="mainmenu-button">
                     <img src="img/menuburger.svg" alt="menu">
                 </button>
-                <a href="product.html" class="contacts">
+                <a href="catalog.html" class="contacts">
                     <img src="img/contacts.svg" alt="contacts">
                 </a>
                 <a href="cart.html" class="cart-svg">
@@ -37,48 +37,53 @@
             </div>
         </div>
     </header>
-    <section class="offer">
-        <div class="wrapper offer-wrap">
-            <h1 class="offer-title">
-                THE BRAND <br>
-                <span class="offer-title--small">OF LUXURIOUS
-                    <span class="offer-title--red">FASHION</span></span>
-            </h1>
-        </div>
-    </section>
-    <section class="categories ">
-        <div class="wrapper categories-wrap">
-            <div class="categories-item categories-item-1">
-                <p class="categories-sale">30% OFF</p>
-                <p class="categories-type">FOR WOMEN</p>
+    <section class="page-title">
+        <div class="page-title-wrapper wrapper">
+            <div class="page-title-left">
+                <p class="page-title-left-text">
+                    NEW ARRIVALS
+                </p>
             </div>
-            <div class="categories-item categories-item-2">
-                <p class="categories-sale">HOT DEAL</p>
-                <p class="categories-type">FOR MEN</p>
-            </div>
-            <div class="categories-item categories-item-3">
-                <p class="categories-sale">NEW ARRIVALS</p>
-                <p class="categories-type">FOR KIDS</p>
-            </div>
-            <div class="categories-item categories-item-4">
-                <p class="categories-sale">LUXURIOUS & TRENDY</p>
-                <p class="categories-type">ACCESSORIES</p>
-            </div>
+            <nav class="page-title-right">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-list"><a href="site.html" class="breadcrumb-list-link"> HOME</a></li>
+                    <li class="breadcrumb-list-link"> / </li>
+                    <li class="breadcrumb-list"><a href="#" class="breadcrumb-list-link"> MEN</a></li>
+                    <li class="breadcrumb-list-link"> / </li>
+                    <li class="breadcrumb-list"><a href="#" class="breadcrumb-list-link active"> NEW ARRIVALS</a></li>
+                </ol>
+            </nav>
         </div>
     </section>
     <section class="feature">
-        <div class="wrapper feature-wrap">
-            <div class="center">
-                <h2 class="feature-heading center">Featured Items</h2>
-                <p class="feature-description">Shop for items based on what we featured in this week</p>
+        <div class="filter">
+            <div class="wrapper filter-wrap">
+                <div class="filter-left">
+                    <button class="filter-button">FILTER<img src="img/filter.svg" alt="filter"
+                            class="filter-button-svg">
+                    </button>
+                </div>
+                <div class="filter-right">
+                    <button class="filter-button-sort">TRENDING NOW<img src="img/arrow-down.svg" alt="arrow"
+                            class="filter-button-svg">
+                    </button>
+                    <button class="filter-button-sort">SIZE<img src="img/arrow-down.svg" alt="arrow"
+                            class="filter-button-svg">
+                    </button>
+                    <button class="filter-button-sort">PRICE<img src="img/arrow-down.svg" alt="arrow"
+                            class="filter-button-svg">
+                    </button>
+                </div>
             </div>
+        </div>
+        <div class="wrapper feature-wrap center">
             <ul class="feature-item">
                 <li class="feature-item-card">
                     <img src="img/itemcard-1.png" alt="itm1">
                     <div class="overlay">
                         <button class="overlay-button">
                             <img class="overlay-button-cart" src="img/cart.svg" alt="cart">
-                            <a href="cart.html" class="overlay-button-link">Add to cart</a>
+                            <a href="#" class="overlay-button-link">Add to cart</a>
                         </button>
                     </div>
                     <div class="item-card card-1">
@@ -93,7 +98,7 @@
                     <div class="overlay">
                         <button class="overlay-button">
                             <img class="overlay-button-cart" src="img/cart.svg" alt="cart">
-                            <a href="cart.html" class="overlay-button-link">Add to cart</a>
+                            <a href="#" class="overlay-button-link">Add to cart</a>
                         </button>
                     </div>
                     <div class="item-card card-2">
@@ -108,7 +113,7 @@
                     <div class="overlay">
                         <button class="overlay-button">
                             <img class="overlay-button-cart" src="img/cart.svg" alt="cart">
-                            <a href="cart.html" class="overlay-button-link">Add to cart</a>
+                            <a href="#" class="overlay-button-link">Add to cart</a>
                         </button>
                     </div>
                     <div class="item-card card-3">
@@ -123,7 +128,7 @@
                     <div class="overlay">
                         <button class="overlay-button">
                             <img class="overlay-button-cart" src="img/cart.svg" alt="cart">
-                            <a href="cart.html" class="overlay-button-link">Add to cart</a>
+                            <a href="#" class="overlay-button-link">Add to cart</a>
                         </button>
                     </div>
                     <div class="item-card card-4">
@@ -138,7 +143,7 @@
                     <div class="overlay">
                         <button class="overlay-button">
                             <img class="overlay-button-cart" src="img/cart.svg" alt="cart">
-                            <a href="cart.html" class="overlay-button-link">Add to cart</a>
+                            <a href="#" class="overlay-button-link">Add to cart</a>
                         </button>
                     </div>
                     <div class="item-card card-5">
@@ -153,7 +158,7 @@
                     <div class="overlay">
                         <button class="overlay-button">
                             <img class="overlay-button-cart" src="img/cart.svg" alt="cart">
-                            <a href="cart.html" class="overlay-button-link">Add to cart</a>
+                            <a href="#" class="overlay-button-link">Add to cart</a>
                         </button>
                     </div>
                     <div class="item-card card-6">
@@ -163,10 +168,70 @@
                         <p class="item-card-price">$52.00</p>
                     </div>
                 </li>
+                <li class="feature-item-card">
+                    <img src="img/itemcard-1.png" alt="itm1">
+                    <div class="overlay">
+                        <button class="overlay-button">
+                            <img class="overlay-button-cart" src="img/cart.svg" alt="cart">
+                            <a href="#" class="overlay-button-link">Add to cart</a>
+                        </button>
+                    </div>
+                    <div class="item-card card-1">
+                        <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
+                        <p class="item-card-description">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="item-card-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="feature-item-card">
+                    <img src="img/itemcard-1.png" alt="itm1">
+                    <div class="overlay">
+                        <button class="overlay-button">
+                            <img class="overlay-button-cart" src="img/cart.svg" alt="cart">
+                            <a href="#" class="overlay-button-link">Add to cart</a>
+                        </button>
+                    </div>
+                    <div class="item-card card-1">
+                        <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
+                        <p class="item-card-description">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="item-card-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="feature-item-card">
+                    <img src="img/itemcard-1.png" alt="itm1">
+                    <div class="overlay">
+                        <button class="overlay-button">
+                            <img class="overlay-button-cart" src="img/cart.svg" alt="cart">
+                            <a href="#" class="overlay-button-link">Add to cart</a>
+                        </button>
+                    </div>
+                    <div class="item-card card-1">
+                        <h3 class="item-card-heading">ELLERY X M'O CAPSULE</h3>
+                        <p class="item-card-description">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="item-card-price">$52.00</p>
+                    </div>
+                </li>
             </ul>
-            <div class="center">
-                <a href="catalog.html" class="feature-btn">Browse All Products</a>
-            </div>
+            <nav class="pagination">
+                <div class="pagination-wrapper ">
+                    <ul class="navbar">
+                        <li class="navbar-list"><a href="" class="navbar-list-link prev"><i
+                                    class="fas fa-chevron-left"></i></a></li>
+                        <li class="navbar-list"><a href="" class="navbar-list-link active">1</a></li>
+                        <li class="navbar-list"><a href="" class="navbar-list-link">2</a></li>
+                        <li class="navbar-list"><a href="" class="navbar-list-link">3</a></li>
+                        <li class="navbar-list"><a href="" class="navbar-list-link">4</a></li>
+                        <li class="navbar-list"><a href="" class="navbar-list-link">5</a></li>
+                        <li class="navbar-list"><a href="" class="navbar-list-link">6</a></li>
+                        <span class="navbar-list"><a href="" class="navbar-list-link more">...</a></span>
+                        <li class="navbar-list"><a href="" class="navbar-list-link">20</a></li>
+                        <li class="navbar-list"><a href="" class="navbar-list-link next"><i
+                                    class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </section>
     <section class="advantages">
@@ -203,7 +268,7 @@
                 <p class="subscribe-text">SUBSCRIBE <br>
                     <span class="subscribe-text--small">FOR OUR NEWLETTER AND PROMOTION</span>
                 </p>
-                <form action="registration.html" class="subscribe-form">
+                <form action="#" class="subscribe-form">
                     <input class="subscribe-field" type="email" placeholder="Enter Your Email" required>
                     <input class="subscribe-btn" type="submit" value="Subscribe">
                 </form>

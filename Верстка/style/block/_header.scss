@@ -1,0 +1,41 @@
+.header {
+    background: $main-black;
+    padding: 18px 0;
+    color: $default-white;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &left {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo-link{
+    @include href ;
+    margin-right: 41px;
+}
+
+.search-button {
+    @include btn;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.mainmenu-button {
+    @include btn;
+    margin-right: 33px;
+}
+
+.contacts {
+    @include href ;
+    margin-right: 33px;
+}
+
+.cart-svg {
+    @include href ;
+}

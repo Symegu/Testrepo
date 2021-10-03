@@ -1,0 +1,126 @@
+.feature {
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    &-heading {
+        @include main-text (normal,30px,36px);
+        color: $main-black;
+        margin-bottom: 6px;
+    }
+    &-description {
+        @include main-text;
+        color: #9F9F9F;
+        margin-bottom: 48px;
+    }
+    &-btn {
+        @include main-text (normal,16px,19px);
+        text-decoration: none;
+        color: $main-pink;
+        background-color: $default-white;
+        padding: 15px 40px;
+        border: 1px solid $main-pink;
+        transition: 0.5s;
+        &:hover {
+            color: $default-white;
+            background-color: $main-pink;
+        }
+    }
+}
+
+.feature-item {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    &-card {
+        height: 580px;
+        width: 360px;
+        background: #F8F8F8;
+        margin-bottom: 30px;
+        position: relative;
+    }
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 28px 20px 16px;
+    &-heading {
+        @include main-text (normal,13px,16px);
+        color: $main-black;
+        margin-bottom: 12px;
+    }
+    &-description {
+        @include main-text (300,14px,17px);
+        color: #5D5D5D;
+        margin-bottom: 18px;
+    }
+    &-price {
+        @include main-text (normal,16px,19px);
+        color: $main-pink;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    &:hover {
+        opacity: 1;
+    }
+    &-button {
+        background-color: transparent;
+        width: 140px;
+        height: 45px;
+        border: 1px solid $default-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-link {
+            @include main-text;
+            text-decoration: none;
+            margin-left: 10px;
+            color: $default-white;
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid #EBEBEB;
+    justify-content: space-between;
+    padding: 8px 7px;
+    margin-top: 15px;
+    width: 284px;
+    &-list {
+        padding: 8px;
+        &-link{
+            @include main-text (300,16px,19px);
+            text-decoration: none;
+            color: #C4C4C4;
+        }
+    }
+}
+
+.active {
+    color: #EF5B70;
+}
+
+.fas {
+    color: #000000;
+}
+.center {
+    text-align: center;
+    align-items: center;
+}
