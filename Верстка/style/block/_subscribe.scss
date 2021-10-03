@@ -51,6 +51,7 @@
 	border-top-left-radius: 26px;
 	border-bottom-left-radius: 26px;
     color: $main-black;
+    transition: 0.3s;
     &::placeholder {
         @include main-text;
         color: $main-black;
@@ -69,6 +70,7 @@
 	border-bottom-right-radius: 26px;
     @include main-text;
     color: $default-white;
+    transition: 0.3s;
     &:hover {
         background-color: #e05c6e;
     }

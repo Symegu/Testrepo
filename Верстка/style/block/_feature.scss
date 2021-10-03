@@ -20,7 +20,7 @@
         background-color: $default-white;
         padding: 15px 40px;
         border: 1px solid $main-pink;
-        
+        transition: 0.5s;
         &:hover {
             color: $default-white;
             background-color: $main-pink;

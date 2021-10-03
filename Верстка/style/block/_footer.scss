@@ -8,26 +8,29 @@
         align-items: center;
     }
 }
-
-.socialmedia {
-    margin-left: 7px;
-    text-align: center;
-    width: 32px;
-    height: 32px;
-    background-color: $default-white;
-    border: transparent;
-    &:hover {
-        background-color: $main-pink;
-    }
-    &:hover .socialicon {
-        color: $default-white;
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-link {
+        color: #000;
+        text-decoration: none;
+        font: size 16px;
+        background-color: $default-white;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+        transition: 0.3s;
+        &:hover {
+            color: $default-white;
+            background-color: $main-pink;
+        }
     }
 }
-.socialicon {
-    @include href;
-    color: $main-black;
-}
-
+  
 .allrights {
     @include main-text (normal,16px,19px);
     color: $default-white;

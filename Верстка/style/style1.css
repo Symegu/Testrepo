@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1140px;
+  width: 1140px;
   margin: 0 auto;
 }
 
@@ -336,6 +336,8 @@ body {
   background-color: #FFFFFF;
   padding: 15px 40px;
   border: 1px solid #F16D7F;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .feature-btn:hover {
@@ -544,15 +546,11 @@ body {
 
 /* subscribe */
 .subscribe {
-  background-color: #eee;
   background-image: url(../img/photo-subscribe.png);
   background-repeat: no-repeat;
-  background-position: left bottom;
-  min-height: 448px;
+  height: 448px;
+  padding-top: 97px;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .subscribe-wrap {
@@ -565,7 +563,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
 }
 
 .subscribe-left {
@@ -576,6 +573,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 360px;
   height: 225px;
   -webkit-box-align: center;
@@ -631,6 +630,8 @@ body {
   border-top-left-radius: 26px;
   border-bottom-left-radius: 26px;
   color: #222222;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-field::-webkit-input-placeholder {
@@ -679,6 +680,8 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .subscribe-btn:hover {
@@ -717,27 +720,42 @@ body {
           align-items: center;
 }
 
-.socialmedia {
-  margin-left: 7px;
-  text-align: center;
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-link {
+  color: #000;
+  text-decoration: none;
+  font: size 16px;
+  background-color: #FFFFFF;
   width: 32px;
   height: 32px;
-  background-color: #FFFFFF;
-  border: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.socialmedia:hover {
-  background-color: #F16D7F;
-}
-
-.socialmedia:hover .socialicon {
+.social-link:hover {
   color: #FFFFFF;
-}
-
-.socialicon {
-  text-decoration: none;
-  color: transparent;
-  color: #222222;
+  background-color: #F16D7F;
 }
 
 .allrights {
