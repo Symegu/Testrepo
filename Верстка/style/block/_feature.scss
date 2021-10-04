@@ -46,6 +46,7 @@
 .item-card {
     display: flex;
     flex-direction: column;
+    text-align: left;
     margin: 25px 28px 20px 16px;
     &-heading {
         @include main-text (normal,13px,16px);
@@ -75,23 +76,31 @@
     align-items: center;
     opacity: 0;
     transition: 0.5s;
-    &:hover {
-        opacity: 1;
-    }
-    &-button {
-        background-color: transparent;
-        width: 140px;
-        height: 45px;
-        border: 1px solid $default-white;
+    &-btn {
+        text-decoration: none;
+        color: $default-white;
+        @include main-text;
         display: flex;
         align-items: center;
-        justify-content: center;
-        &-link {
-            @include main-text;
-            text-decoration: none;
-            margin-left: 10px;
-            color: $default-white;
+        border: 1px solid #FFFFFF;
+        padding: 13px 16px 13px 13px;
+        background-color: transparent;
+        &:hover {
+            transition: 0.3s;
+            border-radius: 30px;
+            background-color: $default-white;
+            color: $main-black;
+            .overlay-cart {
+                fill: black;
+                color: black;
+            }
         }
+    }
+    &-cart {
+        margin-right: 11px;
+    }
+    &:hover {
+        opacity: 1;
     }
 }
 
