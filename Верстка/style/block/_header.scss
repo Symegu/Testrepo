@@ -26,12 +26,8 @@
     align-items: center;
 }
 
-.mainmenu-button {
-    @include btn;
+.menu-btn {
     margin-right: 33px;
-    &-svg {
-        fill: $default-white;
-    }
     &:hover .mainmenu-button-svg {
         fill: $main-pink;
     }

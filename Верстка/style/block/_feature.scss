@@ -120,6 +120,11 @@
             text-decoration: none;
             color: #C4C4C4;
         }
+        &:hover {
+            .navbar-list-link {
+                color: $main-pink;
+            }
+        }
     }
 }
 

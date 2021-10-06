@@ -1,0 +1,63 @@
+.mainmenu-button {
+    display: none;
+    &-svg {
+        fill: $default-white;
+    }
+}
+
+#menu:checked ~ .big-menu {
+    display: block; 
+}
+
+.big-menu{
+    background-color: $default-white;
+    box-shadow: 6px 4px 35px 0px #00000036;
+    display: none;
+    width: 232px;
+    height: 755px;
+    position: absolute;
+    right: 0;
+    top: 78px;
+    z-index: 1;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 16px 0px 34px;
+    }
+    &-cross {
+        @include btn;
+        width: 13px;
+        height: 13px;
+    }
+    &-heading {
+        @include main-text (bold,14px,17px);
+        color: $main-black;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+    &-catalog {
+        &-item {
+            list-style-type: none;  
+        }
+        &-name {
+            text-decoration: none;
+            @include main-text;
+            color: $main-pink;
+        }
+    }
+}
+
+.catalog {
+    padding-left: 12px;
+    padding-bottom: 20px;
+    padding-top: 12px;
+    &-item {
+        list-style-type: none;
+        margin-bottom: 11px;
+        &-link {
+            text-decoration: none;
+            @include main-text;
+            color: #6F6E6E;
+        }
+    }
+}

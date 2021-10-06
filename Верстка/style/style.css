@@ -65,20 +65,11 @@ body {
           align-items: center;
 }
 
-.mainmenu-button {
-  background-color: transparent;
-  border: transparent;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.menu-btn {
   margin-right: 33px;
 }
 
-.mainmenu-button-svg {
-  fill: #FFFFFF;
-}
-
-.mainmenu-button:hover .mainmenu-button-svg {
+.menu-btn:hover .mainmenu-button-svg {
   fill: #F16D7F;
 }
 
@@ -107,6 +98,92 @@ body {
 
 .cart-header:hover .cart-header-svg {
   fill: #F16D7F;
+}
+
+/*bigmenu*/
+.mainmenu-button {
+  display: none;
+}
+
+.mainmenu-button-svg {
+  fill: #FFFFFF;
+}
+
+#menu:checked ~ .big-menu {
+  display: block;
+}
+
+.big-menu {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px 0px #00000036;
+          box-shadow: 6px 4px 35px 0px #00000036;
+  display: none;
+  width: 232px;
+  height: 755px;
+  position: absolute;
+  right: 0;
+  top: 78px;
+  z-index: 1;
+}
+
+.big-menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 16px 0px 34px;
+}
+
+.big-menu-cross {
+  background-color: transparent;
+  border: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13px;
+  height: 13px;
+}
+
+.big-menu-heading {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222222;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.big-menu-catalog-item {
+  list-style-type: none;
+}
+
+.big-menu-catalog-name {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.catalog {
+  padding-left: 12px;
+  padding-bottom: 20px;
+  padding-top: 12px;
+}
+
+.catalog-item {
+  list-style-type: none;
+  margin-bottom: 11px;
+}
+
+.catalog-item-link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
 }
 
 /* breadcrumbs */
@@ -305,9 +382,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .filter[open] {
@@ -648,6 +725,10 @@ body {
   line-height: 19px;
   text-decoration: none;
   color: #C4C4C4;
+}
+
+.navbar-list:hover .navbar-list-link {
+  color: #F16D7F;
 }
 
 .active {
