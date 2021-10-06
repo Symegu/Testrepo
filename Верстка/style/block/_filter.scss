@@ -1,33 +1,130 @@
+.filter-sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .filter {
-    &-wrap {
+    margin-top: 50px;
+    margin-bottom: 64px;
+    summary {display: block;}
+    ::-webkit-details-marker {display: none;}
+    box-sizing: border-box;
+    width: $card-width;
+    margin-right: 30px;
+    position: relative;
+    padding-top: 13px;
+    &-wrap{
         display: flex;
+        align-items: flex-start;
+    }
+    &[open] {
+        box-shadow: 6px 4px 35px 0px #00000036;
+        z-index: 1;
+        .filter-title {
+            color: $main-pink;
+            &-ico {
+                fill: $main-pink;
+            }
+        }
+    }
+    &-content {
+        position: absolute;
+        background-color: $default-white;
+        width: $card-width;
+        left: 0;
+        padding: 16px 16px 0 16px;
+        box-shadow: 6px 23px 35px 0px #00000036;
+    }
+    &-title {
         align-items: center;
-        padding-top: 50px;
-        padding-bottom: 66px;
-    }
-    &-left {
-        width: $card-width;
         padding-left: 16px;
+        @include main-text (600, 14px,17px);
+        color: $main-black;
+        &-ico {
+            margin-left: 11px;
+        }
+        &:hover {
+            color: $main-pink;
+            .filter-title-ico {
+                fill: $main-pink;
+            }
+        }
+
     }
-    &-right {
-        width: $card-width;
-        margin-left: 30px;
-        display: flex;
+    &-subtitle {
+        @include main-text;
+        color: #6F6E6E;
+        margin-bottom: 17px;
+        &-title {
+            border-left: 5px solid $main-pink;
+            border-bottom: 1px solid #EBEBEB;
+            padding: 11px;
+        }
+        &:hover {
+                color: $main-pink;
+            }
+        &[open] {
+                color: $main-pink;
+            }
+    }
+    &-list {
+        list-style-type: none;
+        padding-top: 24px;
+        padding-left: 12px;
+    }
+    &-item {
+        padding-bottom: 11px;
+        
+    }
+    &-link {
+        text-decoration: none;
+        @include main-text;
+        color: #6F6E6E;
+        &:hover {
+            color: $main-black;
+        }
     }
 }
 
-.filter-button {
-    @include btn;
-    padding-right: 28px;
-    color: #000000;
-    @include main-text (600, 14px, 17px);
-    &-svg {
-        padding-left: 12px;
+.sort {
+    summary {display: block;}
+    ::-webkit-details-marker {display: none;}
+    box-sizing: border-box;
+    position: relative;
+    &-box {
+        display: flex;
+        width: $card-width;
+        align-items: center;
     }
-    &-sort{
-        @include btn;
+    &-name {
         @include main-text;
         color: #6F6E6E;
-        margin-top:0;
+        padding-right: 28px;
+        &::after {
+            content: url(../img/arrow-down.svg);
+            margin-left: 10px;
+        }
+    }
+}
+.size {
+    &-sort {
+        list-style: none;
+        position: absolute;
+        padding: 10px 20px 12px 10px;
+        z-index: 1;
+        background-color: $default-white;
+        width: 79px;
+        height: 103px;
+        left: -10px;
+        box-shadow: 6px 4px 35px 0px #00000036;
+    }
+    &-list {
+        @include main-text;
+        color: #6F6E6E;
+        margin-bottom: 5px;
+    }
+    &-chek {
+        margin-right: 9px;
     }
 }
