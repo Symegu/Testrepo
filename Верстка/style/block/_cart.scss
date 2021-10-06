@@ -40,6 +40,7 @@
     }
     &-field {
         &:hover {
+            transition: 0.3s;
             background-color: #F8F3F4;
         }
         border: 1px solid #A4A4A4;
@@ -109,7 +110,7 @@
         margin-top: 17px;
         margin-bottom: 42px;
         &:hover {
-            transition: 1s;
+            transition: 1.4s;
             transform: rotateY(360deg);
             background-color: #e05c6e;
         }

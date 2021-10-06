@@ -30,6 +30,7 @@
     margin-right: 33px;
     &:hover .mainmenu-button-svg {
         fill: $main-pink;
+        transition: 0.3s;
     }
 }
 
@@ -41,6 +42,7 @@
     }
     &:hover .contacts-svg {
         fill: $main-pink;
+        transition: 0.3s;
     }
 }
 
@@ -51,5 +53,6 @@
     }
     &:hover .cart-header-svg {
         fill: $main-pink;
+        transition: 0.3s;
     }
 }

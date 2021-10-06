@@ -71,6 +71,8 @@ body {
 
 .menu-btn:hover .mainmenu-button-svg {
   fill: #F16D7F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contacts {
@@ -85,6 +87,8 @@ body {
 
 .contacts:hover .contacts-svg {
   fill: #F16D7F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .cart-header {
@@ -98,6 +102,8 @@ body {
 
 .cart-header:hover .cart-header-svg {
   fill: #F16D7F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /*bigmenu*/
@@ -344,6 +350,13 @@ body {
   width: 100%;
   height: 180px;
   background-image: url(../img/cardacc.jpg);
+}
+
+.categories-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /* filter */
@@ -1094,6 +1107,8 @@ body {
 
 .registration-form-field:hover {
   background-color: #F8F3F4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .registration-form-radio {
@@ -1146,6 +1161,8 @@ body {
 
 .registration-form-button:hover {
   background-color: #e05c6e;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .registration-info {
@@ -1279,6 +1296,8 @@ body {
 }
 
 .cart-form-field:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #F8F3F4;
 }
 
@@ -1403,8 +1422,8 @@ body {
 }
 
 .cart-total-button:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
   background-color: #e05c6e;
