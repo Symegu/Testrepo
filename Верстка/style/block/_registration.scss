@@ -32,14 +32,14 @@
             @include main-text (300,13px,16px);
             color: #B1B1B1;
         }
+        &:hover {
+            background-color: #F8F3F4;
+        }
     }
     &-radio {
         margin-top: 11px;
         margin-bottom: 33px;
         display: flex;
-        &-input {
-            margin-right: 10px;
-        }
         &-label {
             @include main-text (300,11px,13px);
             color: #000000;
@@ -63,6 +63,9 @@
         &-pic {
             padding-left: 20px;
         }
+        &:hover {
+            background-color: #e05c6e;
+        }
     }
 }
 
@@ -80,6 +83,34 @@
     }
 }
 
-.label {
-    padding-right: 20px;
+.radio-input {
+    display: none;
+    &-style {
+        display: inline-block;
+        box-sizing: border-box;
+        border: 1px solid #A4A4A4;
+        width: 17px;
+        height: 17px;
+        position: relative;
+        vertical-align: middle;
+        margin-right: 10px;
+        border-radius: 300px;
+        background-color:#ffffff;
+        &::before {
+            content: '';
+            background: $main-pink;
+            width: 13px;
+            height: 13px;
+            opacity: 0;
+            transition: 0.3s;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            border-radius: 300px;
+        }
+    }
+}
+
+.radio-input:checked + .radio-input-style::before {
+    opacity: 1;
 }

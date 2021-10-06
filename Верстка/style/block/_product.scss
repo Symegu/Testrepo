@@ -80,40 +80,40 @@
         }
     }
 }
-.sort {
+
+.sort-box-about {
     display: flex;
     margin-top: 64px;
-    &-item-button {
-        @include main-text;
-        color: #6F6E6E;
-        margin-right: 23px;
-        @include btn;
-        &-link {
-            @include href;
-            padding-left: 9px;
-        }
-    }
-        
+    align-items: center;
 }
+
+.lastname {
+    padding-right: 0;
+}
+
 .about-button {
     background-color: transparent;
-    width: 212px;
-    height: 48px;
     border: 1px solid $main-pink;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     margin-top: 48px;
-    &-pic {
+    padding: 14px 56px 14px 72px;
+    display: flex;
+    align-items: center;
+    @include main-text(normal,16px,19px);
+    color: $main-pink;
+    &-cart {
         position: absolute;
         left: 24px;
+        fill: $main-pink;
     }
-    &-link {
-        @include main-text(normal,16px,19px);
-        text-decoration: none;
-        margin-left: 10px;
-        color: $main-pink;
+    &:hover {
+        transition: 0.3s;
+        background-color: $main-pink;
+        color: $default-white;
+        .about-button-cart {
+            transition: 0.3s;
+            fill: $default-white;
+        }
     }
 }
 

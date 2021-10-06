@@ -15,9 +15,6 @@
 .logo-link{
     @include href ;
     margin-right: 41px;
-    &:hover {
-        scale: 1.1;
-    }
 }
 
 .search-button {
@@ -32,13 +29,31 @@
 .mainmenu-button {
     @include btn;
     margin-right: 33px;
+    &-svg {
+        fill: $default-white;
+    }
+    &:hover .mainmenu-button-svg {
+        fill: $main-pink;
+    }
 }
 
 .contacts {
     @include href ;
     margin-right: 33px;
+    &-svg {
+        fill: $default-white;
+    }
+    &:hover .contacts-svg {
+        fill: $main-pink;
+    }
 }
 
-.cart-svg {
-    @include href ;
+.cart-header {
+    @include href;
+    &-svg {
+        fill: $default-white;
+    }
+    &:hover .cart-header-svg {
+        fill: $main-pink;
+    }
 }
