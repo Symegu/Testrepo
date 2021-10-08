@@ -1,0 +1,69 @@
+.mainmenu-button {
+    display: none;
+    &-svg {
+        fill: $default-white;
+    }
+}
+
+.big-menu{
+    background-color: $default-white;
+    box-shadow: 6px 4px 35px 0px #00000036;
+    width: 232px;
+    min-height: 756px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        padding-top: 37px;
+        padding-left:  33px;
+    }
+    &-cross {
+        @include btn;
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+    &-heading {
+        @include main-text (bold,14px,17px);
+        color: $main-black;
+        margin-bottom: 24px;
+    }
+    &-catalog {
+        &-item {
+            list-style-type: none;  
+        }
+        &-name {
+            text-decoration: none;
+            @include main-text;
+            color: $main-pink;
+        }
+    }
+    &-open {
+        display: block;
+    }
+    &-close {
+        display: none;
+    }
+}
+
+.catalog {
+    padding-left: 12px;
+    padding-bottom: 20px;
+    padding-top: 12px;
+    &-item {
+        list-style-type: none;
+        margin-bottom: 11px;
+        &-link {
+            text-decoration: none;
+            @include main-text;
+            color: #6F6E6E;
+        }
+    }
+}
