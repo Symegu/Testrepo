@@ -80,6 +80,57 @@
     }
 }
 
-.label {
-    padding-right: 20px;
+.radio-input {
+    display: none;
+    &-style {
+        display: inline-block;
+        box-sizing: border-box;
+        border: 1px solid #A4A4A4;
+        width: 17px;
+        height: 17px;
+        position: relative;
+        vertical-align: middle;
+        margin-right: 10px;
+        border-radius: 300px;
+        background-color:#ffffff;
+        &::before {
+            content: '';
+            background: $main-pink;
+            width: 13px;
+            height: 13px;
+            opacity: 0;
+            transition: 0.3s;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            border-radius: 300px;
+        }
+    }
+}
+
+.radio-input:checked + .radio-input-style::before {
+    opacity: 1;
+}
+
+/*tablet*/
+@media (max-width: 1180px) {
+    .registration-wrap {
+        padding-top: 40px;
+    }
+    .registration-left {
+        margin-right: 22px;
+    }
+    .registration-info {
+        @include main-text (300,16px,19px);
+        padding-bottom: 32px;
+        &-list {
+            @include main-text (300,16px,19px);
+            padding-bottom: 16px;
+        }
+    }
+} 
+
+/*mobile*/
+@media (max-width: 797px) {
+    
 }

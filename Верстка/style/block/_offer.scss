@@ -24,3 +24,35 @@
         color: $main-pink;
     }
 }
+
+/* tablet */
+@media (max-width: 1180px) {
+    .offer-wrap {
+        height: 368px;
+        background-size: contain;
+        background-position: 0;
+    }
+
+    .offer-title {
+        margin-right: 16px;
+        @include main-text (900,44px,35px);
+    }
+
+    .offer-title--small {
+        @include main-text (bold,24px,29px);
+    }
+
+    .offer-title--red {
+        @include main-text (bold,24px,29px);
+    }
+}
+
+/*mobile*/
+@media (max-width: 797px) {
+    .offer-wrap {
+        background-image: none;
+    }
+    .offer-title {
+        line-height: 30px;
+    }
+}

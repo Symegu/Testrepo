@@ -128,3 +128,27 @@
         margin-right: 9px;
     }
 }
+
+/* tablet */
+@media (max-width: 1180px) {
+    .filter-title {
+        padding-left: 0;
+    }
+    .sort-box {
+        justify-content: flex-end;
+        margin-top: 11px;
+        margin-bottom: 40px;
+        padding-top: 13px;
+    }
+    .sort-name {
+        padding-left: 25px;
+        padding-right: 0;
+    }
+    .filter {
+        margin-top: 11px;
+        margin-bottom: 40px;
+    }
+    .display-none {
+        display: none;
+    }
+}

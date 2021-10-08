@@ -1,0 +1,75 @@
+/* переменные */
+@import "_vars.scss";
+
+/* миксы */
+@import "_mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+/* header */
+@import "block/_header.scss";
+
+/* menu */
+@import "block/_bigmenu.scss";
+
+/* breadcrumbs */
+@import "block/_breadcrumb.scss";
+
+/* offer */
+@import "block/_offer.scss";
+
+/* categories*/
+@import "block/_category.scss";
+
+/* filter */
+@import "block/_filter.scss";
+
+/* feature */
+@import "block/_feature.scss";
+
+/* advantage */
+@import "block/_advantage.scss";
+
+/* subscribe */
+@import "block/_subscribe.scss";
+
+/* footer */
+@import "block/_footer.scss";
+
+/* registration */
+@import "block/_registration.scss";
+
+/* cart */
+@import "block/_cart.scss";
+
+/* products */
+@import "block/_product.scss";
+
+/*tablet*/
+@media (max-width: 1180px) {
+    .wrapper {
+        max-width: calc(768px - 16px * 2);
+    }
+} 
+
+/*mobile*/
+@media (max-width: 797px) {
+    .wrapper {
+        max-width: calc(375px - 16px * 2);
+    }
+}
