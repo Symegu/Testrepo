@@ -130,15 +130,24 @@ body {
   .header-wrap {
     padding: 0;
   }
-  .contacts {
-    display: none;
+  :hover .contacts-svg {
+    fill: #F16D7F;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
-  .cart-header {
-    display: none;
-  }
-  .mainmenu-button-svg {
-    margin-right: 0;
-  }
+}
+
+.cart-header {
+  text-decoration: none;
+  color: transparent;
+}
+
+.cart-header-svg {
+  fill: #FFFFFF;
+}
+
+.cart-header .mainmenu-button-svg {
+  margin-right: 0;
 }
 
 /*bigmenu*/
@@ -1833,6 +1842,21 @@ body {
   color: #FFFFFF;
 }
 
+.about-button:hover .about-button-cart {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #FFFFFF;
+}
+
+/*tablet*/
+@media (max-width: 1180px) {
+  .filter-wrap {
+    margin-top: 11px;
+    margin-right: 40px;
+  }
+}
+
+/*mobile*/
 /*tablet*/
 @media (max-width: 1180px) {
   .wrapper {
