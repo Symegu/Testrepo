@@ -14,15 +14,14 @@
 }
 
 .logo-link{
-    @include href ;
+    @include href;
+    border: none;
     margin-right: 41px;
-    &:hover {
-        scale: 1.1;
-    }
 }
 
 .search-button {
     @include btn;
+    border: none;
 }
 
 .header-right {
@@ -32,16 +31,65 @@
 
 .mainmenu-button {
     @include btn;
-    margin-right: 33px;
+    &-svg {
+        fill: $default-white;
+        margin-right: 33px;
+        &:hover {
+            transition: 0.3s;
+            fill: $main-pink;
+        }
+    }
 }
 
 .contacts {
     @include href ;
-    margin-right: 33px;
+    &-svg {
+        fill: $default-white;
+        margin-right: 33px;
+        &:hover {
+            transition: 0.3s;
+            fill: $main-pink;
+        }
+    }
 }
 
-.cart-svg {
+.cart-header {
     @include href ;
+    &-svg {
+        fill: $default-white;
+        margin-right: 33px;
+        &:hover {
+            transition: 0.3s;
+            fill: $main-pink;
+        }
+    }
+}
+
+/* tablet */
+@media (max-width: 1180px) {
+    .header-wrap {
+        padding: 0 16px;
+    }
+}
+/*mobile*/
+@media (max-width: 797px) {
+    .header-wrap {
+        padding: 0;
+    }
+    &:hover .contacts-svg {
+        fill: $main-pink;
+        transition: 0.3s;
+    }
+}
+
+.cart-header {
+    @include href;
+    &-svg {
+        fill: $default-white;
+    }
+    .mainmenu-button-svg {
+        margin-right: 0;
+    }
 }
 /* tablet */
 @media (max-width: 1180px) {

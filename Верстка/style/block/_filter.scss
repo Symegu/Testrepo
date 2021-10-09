@@ -1,22 +1,18 @@
-.filter-sort {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .filter {
-    margin-top: 50px;
-    margin-bottom: 64px;
     summary {display: block;}
     ::-webkit-details-marker {display: none;}
     box-sizing: border-box;
-    width: $card-width;
-    margin-right: 30px;
     position: relative;
     padding-top: 13px;
     &-wrap{
         display: flex;
-        align-items: flex-start;
+        align-items: flex-end;
+        margin-top: 50px;
+        margin-bottom: 64px;
+    }
+    &-sort {
+        width: $card-width;
+        margin-right: 30px;
     }
     &[open] {
         box-shadow: 6px 4px 35px 0px #00000036;
@@ -92,6 +88,7 @@
     ::-webkit-details-marker {display: none;}
     box-sizing: border-box;
     position: relative;
+    padding-right: 28px;
     &-box {
         display: flex;
         width: $card-width;
@@ -100,7 +97,6 @@
     &-name {
         @include main-text;
         color: #6F6E6E;
-        padding-right: 28px;
         &::after {
             content: url(../img/arrow-down.svg);
             margin-left: 10px;
@@ -124,7 +120,7 @@
         color: #6F6E6E;
         margin-bottom: 5px;
     }
-    &-chek {
+    &-check {
         margin-right: 9px;
     }
 }
@@ -134,21 +130,44 @@
     .filter-title {
         padding-left: 0;
     }
+    .filter-wrap {
+        margin-bottom: 40px;
+    }
+    .sort {
+        padding-right: 0;
+    }
     .sort-box {
         justify-content: flex-end;
-        margin-top: 11px;
-        margin-bottom: 40px;
         padding-top: 13px;
     }
     .sort-name {
         padding-left: 25px;
-        padding-right: 0;
-    }
-    .filter {
-        margin-top: 11px;
-        margin-bottom: 40px;
     }
     .display-none {
         display: none;
+    }
+}
+
+/*mobile*/
+@media (max-width: 797px) {
+    .filter-wrap {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    .filter-sort {
+        width: 32px;
+    }
+    .hidden-ico {
+        display:none;
+    }
+    .filter-title-ico {
+        width: 38px;
+        height: 25px;
+        margin-left: 0;
+    }
+    .sort-name {
+        @include main-text (normal,12px,14px);
+        padding-left: 23px;
     }
 }

@@ -100,6 +100,7 @@
     }
     &-cart {
         margin-right: 11px;
+        fill: $default-white;
     }
     &:hover {
         opacity: 1;
@@ -120,6 +121,11 @@
             @include main-text (300,16px,19px);
             text-decoration: none;
             color: #C4C4C4;
+        }
+        &:hover {
+            .navbar-list-link {
+                color: $main-pink;
+            }
         }
     }
 }

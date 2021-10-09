@@ -24,7 +24,7 @@ body {
 /* header */
 @import "block/_header.scss";
 
-/* menu */
+/*bigmenu*/
 @import "block/_bigmenu.scss";
 
 /* breadcrumbs */
@@ -63,13 +63,13 @@ body {
 /*tablet*/
 @media (max-width: 1180px) {
     .wrapper {
-        max-width: calc(768px - 16px * 2);
+      max-width: calc(768px - 16px * 2);
     }
-} 
-
-/*mobile*/
-@media (max-width: 797px) {
+  }
+  
+  /*mobile*/
+  @media (max-width: 797px) {
     .wrapper {
-        max-width: calc(375px - 16px * 2);
+      max-width: calc(392px - 16px * 2);
     }
-}
+  }
