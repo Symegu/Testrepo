@@ -2,6 +2,7 @@
     background: $main-black;
     padding: 18px 0;
     color: $default-white;
+    position: relative;
     &-wrap {
         display: flex;
         justify-content: space-between;
@@ -87,6 +88,27 @@
         fill: $default-white;
     }
     .mainmenu-button-svg {
+        margin-right: 0;
+    }
+}
+/* tablet */
+@media (max-width: 1180px) {
+    .header-wrap {
+        padding: 0 16px;
+    }
+}
+/*mobile*/
+@media (max-width: 797px) {
+    .header-wrap {
+        padding: 0;
+    }
+    .contacts {
+        display: none;
+    }
+    .cart-header {
+        display: none;
+    }
+    .menu-btn {
         margin-right: 0;
     }
 }

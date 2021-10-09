@@ -1,23 +1,20 @@
 .advantages {
     background: $main-black;
-    margin-top: 95px;
     &-wrap {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between;padding-top: 104px;
+        padding-bottom: 104px;
     }
     &-card {
         display: flex;
         flex-direction: column;
         width: $card-width;
-        height: 135px;
-        margin-top: 110px;
-        margin-bottom: 100px;
         align-items: center;
         &-heading {
             @include main-text (normal,20px,24px);
             color: #FBFBFB;
-            margin-top: 28px;
+            margin-top: 19px;
         }
         &-description {
             @include main-text (300,14px,17px);
@@ -26,4 +23,23 @@
             text-align: center;
         }
     }
+}
+
+/* tablet */
+@media (max-width: 1180px){
+    .advantages-wrap {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 33px;
+        padding-top: 48px;
+    }
+
+    .advantages-card {
+        margin-bottom: 48px;
+    }
+}
+
+/*mobile*/
+@media (max-width: 797px) {
+    
 }

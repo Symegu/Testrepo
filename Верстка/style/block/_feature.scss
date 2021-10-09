@@ -2,6 +2,7 @@
     &-wrap {
         display: flex;
         flex-direction: column;
+        padding-bottom: 95px;
     }
     &-heading {
         @include main-text (normal,30px,36px);
@@ -16,6 +17,7 @@
     &-btn {
         @include main-text (normal,16px,19px);
         text-decoration: none;
+        display: block;
         color: $main-pink;
         background-color: $default-white;
         padding: 15px 40px;
@@ -33,7 +35,7 @@
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-between;
-    margin-bottom: 40px;
+    padding-bottom: 18px;
     &-card {
         height: 580px;
         width: 360px;
@@ -138,4 +140,39 @@
 .center {
     text-align: center;
     align-items: center;
+}
+
+/* tablet */
+@media (max-width: 1180px){
+    .feature-wrap {
+        padding-bottom: 64px;
+    }
+
+    .feature-heading {
+        margin-bottom: 3px;
+    }
+
+    .feature-description {
+        margin-bottom: 72px;
+    }
+
+    .feature-item {
+        padding-bottom: 16px;
+        &-card {
+            margin-bottom: 16px;
+        }
+    }
+    .feature-button {
+        margin-top: 0;
+    }
+}
+
+/*mobile*/
+@media (max-width: 797px) {
+    .feature-wrap {
+        padding-bottom: 96px;
+    }
+    .feature-item {
+        padding-bottom: 24px;
+    }
 }

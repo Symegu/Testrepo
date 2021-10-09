@@ -1,27 +1,23 @@
 .subscribe {
     background-image: url(../img/photo-subscribe.png);
     background-repeat: no-repeat;
-    height: 448px;
-    padding-top: 97px;
     background-size: cover;
     &-wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 97px;
+        padding-bottom: 126px;
     }
     &-left {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         width: $card-width;
-        height: 225px;
         align-items: center;
     }
     &-right {
-        flex-wrap: wrap;
         display: flex;
-        max-width: 557px;
-        max-height: 142px;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -83,5 +79,28 @@
     margin-top: 30px;
     &-italic {
         font-style: italic;
+    }
+}
+
+/* tablet */
+@media (max-width: 1180px){
+    .subscribe-wrap {
+        flex-direction: column;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .subscribe-right {
+        margin-top: 88px;
+    }
+}
+
+/*mobile*/
+@media (max-width: 797px) {
+    .subscribe-wrap {
+        padding-bottom: 110px;
+    }
+    .subscribe-right {
+        margin-top: 98px;
     }
 }

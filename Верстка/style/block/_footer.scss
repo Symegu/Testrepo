@@ -36,3 +36,25 @@
     @include main-text (normal,16px,19px);
     color: $default-white;
 }
+
+/*tablet*/
+@media (max-width: 1180px) {
+    .footer-wrap {
+        padding: 0 16px;
+    }
+} 
+
+/*mobile*/
+@media (max-width: 797px) {
+    .footer {
+        padding-top: 43px;
+        padding-bottom: 9px;
+    }
+    .footer-wrap {
+        flex-direction: column-reverse;
+        
+    }
+    .ft-right {
+        margin-bottom: 40px;
+    }
+}

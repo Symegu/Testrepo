@@ -4,35 +4,34 @@
         fill: $default-white;
     }
 }
-
-#menu:checked ~ .big-menu {
-    display: block; 
-}
-
 .big-menu{
     background-color: $default-white;
     box-shadow: 6px 4px 35px 0px #00000036;
-    display: none;
     width: 232px;
-    height: 755px;
+    min-height: 756px;
     position: absolute;
     right: 0;
-    top: 78px;
+    top: 100%;
     z-index: 1;
     &-wrap {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        padding: 16px 16px 0px 34px;
+        position: relative;
+        padding-top: 37px;
+        padding-left:  33px;
     }
     &-cross {
         @include btn;
         width: 13px;
         height: 13px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
     }
     &-heading {
         @include main-text (bold,14px,17px);
         color: $main-black;
-        margin-top: 8px;
         margin-bottom: 24px;
     }
     &-catalog {
@@ -44,6 +43,12 @@
             @include main-text;
             color: $main-pink;
         }
+    }
+    &-open {
+        display: block;
+    }
+    &-close {
+        display: none;
     }
 }
 
