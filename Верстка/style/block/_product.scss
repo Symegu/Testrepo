@@ -81,14 +81,12 @@
     }
 }
 
-.sort-box-about {
-    display: flex;
-    margin-top: 64px;
-    align-items: center;
-}
-
-.lastname {
+.sort-about {
     padding-right: 0;
+    &-box {
+        display: flex;
+        margin-top: 64px;
+    }
 }
 
 .about-button {
@@ -117,4 +115,15 @@
     }
 }
 
+/*tablet*/
+@media (max-width: 1180px) {
+    .filter-wrap {
+        margin-top: 11px;
+        margin-right: 40px;
+    }
+} 
+
+/*mobile*/
+@media (max-width: 797px) {
     
+}    

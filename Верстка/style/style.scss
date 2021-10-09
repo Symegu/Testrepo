@@ -60,90 +60,16 @@ body {
 /* products */
 @import "block/_product.scss";
 
-/*@media (max-width: 1024px) {
+/*tablet*/
+@media (max-width: 1180px) {
     .wrapper {
-        max-width: 736px;
+      max-width: calc(768px - 16px * 2);
     }
-
-    .header-left {
-        margin-left: 16px;
+  }
+  
+  /*mobile*/
+  @media (max-width: 797px) {
+    .wrapper {
+      max-width: calc(392px - 16px * 2);
     }
-
-    .header-right {
-        margin-right: 16px;
-    }
-
-    .offer-wrap {
-        height: 368px;
-        background-size: contain;
-        background-position: 0;
-    }
-
-    .offer-title {
-        margin-right: 16px;
-        font-size: 44px;
-        line-height: 53px;
-    }
-
-    .offer-title--small {
-        font-size: 24px;
-        line-height: 29px;
-    }
-
-    .offer-title--red {
-        font-size: 24px;
-        line-height: 29px;
-    }
-
-    .categories {
-        padding-top: 20px;
-    }
-
-    .categories-item {
-        max-width: 232.44px;
-        max-height: 167.62px;
-    }
-
-    .categories-item-4 {
-        max-width: 736px;
-        margin-top: 20px;
-    }
-
-    .feature-heading {
-        margin-bottom: 3px;
-    }
-
-    .feature-description {
-        margin-bottom: 72px;
-    }
-
-    .feature-button {
-        margin-top: 0;
-    }
-
-    .advantages {
-        margin-top: 64px;
-    }
-
-    .advantages-wrap {
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 16px;
-    }
-
-    .adv-card {
-        margin-top: 48px;
-        margin-bottom: 48px;
-    }
-
-    .subscribe-wrap {
-        flex-direction: column;
-        margin-top: 64px;
-        margin-bottom: 160px;
-    }
-
-    .sub-text {
-        margin-top: 20px;
-    }
-
-} */
+  }

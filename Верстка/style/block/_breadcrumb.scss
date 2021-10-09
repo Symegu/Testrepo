@@ -32,3 +32,12 @@
         visibility: hidden;
     }
 }
+
+/*mobile*/
+@media (max-width: 797px) {
+    .page-title-wrapper {
+        flex-direction: column;
+        padding-top: 24px;
+        padding-bottom: 46px;
+    }
+}
