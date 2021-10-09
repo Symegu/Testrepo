@@ -1,11 +1,11 @@
 .header {
     background: $main-black;
-    padding: 18px 0;
     color: $default-white;
     position: relative;
     &-wrap {
         display: flex;
         justify-content: space-between;
+        padding: 18px 0;
     }
     &left {
         display: flex;
@@ -33,7 +33,6 @@
     @include btn;
     &-svg {
         fill: $default-white;
-        margin-right: 33px;
         &:hover {
             transition: 0.3s;
             fill: $main-pink;
@@ -45,7 +44,7 @@
     @include href ;
     &-svg {
         fill: $default-white;
-        margin-right: 33px;
+        margin-left: 33px;
         &:hover {
             transition: 0.3s;
             fill: $main-pink;
@@ -57,7 +56,7 @@
     @include href ;
     &-svg {
         fill: $default-white;
-        margin-right: 33px;
+        margin-left: 33px;
         &:hover {
             transition: 0.3s;
             fill: $main-pink;
@@ -94,13 +93,13 @@
 /* tablet */
 @media (max-width: 1180px) {
     .header-wrap {
-        padding: 0 16px;
+        padding: 18px 16px;
     }
 }
 /*mobile*/
 @media (max-width: 797px) {
     .header-wrap {
-        padding: 0;
+        padding: 18px 0;
     }
     .contacts {
         display: none;

@@ -126,9 +126,11 @@
         width: 262px;
         height: 306px;
         display: flex;
+        margin-right: 31px;
     }
     &-description {
-        padding: 22px 22px 67px 31px;
+        padding-top: 22px;
+        padding-bottom: 62px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -221,5 +223,62 @@
 
 /*mobile*/
 @media (max-width: 797px) {
-
+    .cart-wrap {
+        padding-top: 39px;
+    }
+    .cart-item {
+        width: $card-width;
+        height: 188px;
+        margin-bottom: 32px;
+        &-pic {
+            width: 161px;
+            height: 100%;
+            margin-right: 17px;
+        }
+        &-description {
+            padding-top: 13px;
+            padding-bottom: 37px;
+            max-width: 140px; 
+        }
+        &-text {
+            @include main-text (normal,16px,19px);
+            &-small {
+                @include main-text (400,14px,16px);
+                padding-bottom: 3px;
+            }
+        }
+    }
+    .btn-close {
+        top: 12px;
+        right: 12px;
+        margin-top: 0;
+    }
+    .cross {
+        width: 10px;
+        height: 11px;
+    }
+    .quantity-input {
+        width: 24px;
+        height: 15px;
+        margin-left: 15px;
+        @include main-text (400,10px,12px);
+    }
+    .cart-btn {
+        margin-top: 0px;
+        justify-content: space-between;
+    }
+    .cart-button {
+        @include main-text (normal,10px,12px);
+        padding: 9px 30px;
+    }
+    .cart-right {
+        padding-top: 45px;
+        flex-direction: column;
+    }
+    .cart-total {
+        margin-top: 45px;
+    }
+    .cart-wrap {
+        padding-bottom: 96px;
+    }
 }
