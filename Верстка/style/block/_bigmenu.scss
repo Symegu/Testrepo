@@ -36,12 +36,16 @@
     }
     &-catalog {
         &-item {
-            list-style-type: none;  
+            list-style-type: none;
+            &:hover .big-menu-catalog-name {
+                text-decoration: underline;
+            }  
         }
         &-name {
             text-decoration: none;
             @include main-text;
             color: $main-pink;
+            
         }
     }
     &-open {
@@ -63,6 +67,9 @@
             text-decoration: none;
             @include main-text;
             color: #6F6E6E;
+        }
+        &:hover .catalog-item-link {
+            text-decoration: underline;
         }
     }
 }

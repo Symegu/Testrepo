@@ -17,6 +17,10 @@
     list-style-type: none;
     display: flex;
     align-items: center;
+    &-list:hover .breadcrumb-list-link {
+        text-decoration: underline;
+        transition: 0.3s;
+    }
     &-list-link {
         text-decoration: none;
         @include main-text ();
